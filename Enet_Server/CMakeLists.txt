@@ -8,5 +8,5 @@ add_subdirectory(enet)
 include_directories(enet/include)
 link_directories("enet/")
 
-add_executable(Enet_Server main.cpp)
+add_executable(Enet_Server Server.cpp Server.h main.cpp)
 target_link_libraries(Enet_Server enet.lib ws2_32.lib winmm.lib)
